@@ -1,0 +1,672 @@
+{
+  "active_user_id": "user_demo",
+  "users": {
+    "user_demo": {
+      "id": "user_demo",
+      "email": "student@cpe.eng.ac.th",
+      "student_id": "65010999",
+      "password_hash": "scrypt:32768:8:1$oiULaOHj0113vW73$38920a038736c64cab233605178ddedbf32ebc620ebbaa5217378100d0b5c3db1969edb31dc7a4b7021b762a6042c05274a3849c23eebf91c4802a8b5ecbf78f",
+      "name": "กิตติพงษ์ วิศวะคอม (ปี 3)",
+      "department": "Computer Engineering",
+      "faculty": "Faculty of Engineering",
+      "streak_days": 12,
+      "completed_subtasks": 37,
+      "current_energy": "high",
+      "current_mood": "energized",
+      "burnout_score": 5,
+      "last_checkin": "2026-10-21",
+      "classes": [
+        {
+          "code": "CPE223",
+          "color": "indigo",
+          "day": "Wednesday",
+          "end": "12:00",
+          "id": "c_up_a67cb8",
+          "instructor": "อาจารย์ผู้สอน",
+          "name": "Data Structures",
+          "room": "ENG-502",
+          "start": "09:00"
+        },
+        {
+          "code": "CPE342L",
+          "color": "sky",
+          "day": "Wednesday",
+          "end": "17:00",
+          "id": "c_up_d830bb",
+          "instructor": "อาจารย์ผู้สอน",
+          "name": "OS Lab  Unix/C",
+          "room": "LAB-404",
+          "start": "14:00"
+        },
+        {
+          "code": "CPE491",
+          "color": "indigo",
+          "day": "Thursday",
+          "end": "12:00",
+          "id": "c_up_bb3877",
+          "instructor": "อาจารย์ผู้สอน",
+          "name": "Senior Project Se minar",
+          "room": "SEMINAR-1",
+          "start": "10:00"
+        },
+        {
+          "code": "CPE355",
+          "color": "sky",
+          "day": "Thursday",
+          "end": "16:00",
+          "id": "c_up_44bc47",
+          "instructor": "อาจารย์ผู้สอน",
+          "name": "Software Engineering",
+          "room": "ENG-408",
+          "start": "13:00"
+        },
+        {
+          "code": "CPE312",
+          "color": "indigo",
+          "day": "Monday",
+          "end": "12:00",
+          "id": "c_up_dead85",
+          "instructor": "อาจารย์ผู้สอน",
+          "name": "ComputerNetworks  Lec",
+          "room": "ENG-402",
+          "start": "09:00"
+        },
+        {
+          "code": "CPE312L",
+          "color": "sky",
+          "day": "Monday",
+          "end": "16:00",
+          "id": "c_up_b20dd6",
+          "instructor": "อาจารย์ผู้สอน",
+          "name": "ComputerNetworks Lab",
+          "room": "LAB-501",
+          "start": "13:00"
+        },
+        {
+          "code": "CPE324",
+          "color": "indigo",
+          "day": "Tuesday",
+          "end": "12:00",
+          "id": "c_up_028be8",
+          "instructor": "อาจารย์ผู้สอน",
+          "name": "Database Syste ms",
+          "room": "ENG-305",
+          "start": "09:30"
+        },
+        {
+          "code": "CPE381",
+          "color": "sky",
+          "day": "Tuesday",
+          "end": "15:30",
+          "id": "c_up_6c45e3",
+          "instructor": "อาจารย์ผู้สอน",
+          "name": "Technical English",
+          "room": "LIB-201",
+          "start": "13:30"
+        },
+        {
+          "code": "CPE361",
+          "color": "indigo",
+          "day": "Friday",
+          "end": "12:00",
+          "id": "c_up_2beedc",
+          "instructor": "อาจารย์ผู้สอน",
+          "name": "Embedded Syste ms  loT",
+          "room": "IOT-LAB",
+          "start": "09:00"
+        }
+      ],
+      "assignments": [
+        {
+          "id": "asg-01",
+          "course": "CPE312 Computer Networks",
+          "title": "Lab 4: Multi-threaded Socket Chat Server in C/Python",
+          "source_file": "Assignment_Lab4_Socket_Server.pdf",
+          "deadline": "2026-10-25 23:59",
+          "days_left": 4,
+          "raw_text": "ให้นักศึกษาพัฒนาระบบ Multi-threaded Chat Server และ Client โดยใช้ TCP Socket รองรับการเชื่อมต่อพร้อมกันไม่น้อยกว่า 5 ไคลเอนต์ มีระบบ Broadcast ข้อความ และคำสั่ง /list, /quit พร้อมทั้งส่งรายงานผลการทดสอบและ Wireshark Packet Capture",
+          "criteria": "1. ทำงานได้ถูกต้องตาม TCP Protocol 40% | 2. Concurrency/Thread Safety 30% | 3. เอกสารและ Wireshark Analysis 30%",
+          "status": "in_progress",
+          "subtasks": [
+            {
+              "id": "sub-101",
+              "title": "ทบทวน Socket API & ร่างโปรโตคอลการส่งข้อความ",
+              "duration": 35,
+              "cognitive_load": "medium",
+              "recommended_energy": "medium",
+              "scheduled_day": "Thursday",
+              "scheduled_time": "17:00 - 17:40",
+              "completed": false,
+              "guidance": "อ่านสเปก packet header กำหนด format เช่น JSON หรือ string delimiter '\\n' เพื่อแยกแชทข้อความ",
+              "adjustment_note": "จัดลงช่วงเย็นหลังเลิกเรียน"
+            },
+            {
+              "id": "sub-102",
+              "title": "เขียนโค้ด TCP Server พื้นฐาน + รับ Connection วนลูป",
+              "duration": 45,
+              "cognitive_load": "high",
+              "recommended_energy": "high",
+              "scheduled_day": "Wednesday",
+              "scheduled_time": "18:00 - 18:45",
+              "completed": false,
+              "guidance": "ใช้ socket(), bind(), listen(), accept() ทดสอบ client เชื่อมต่อเข้ามาแล้วพิมพ์ log ได้",
+              "adjustment_note": "จัดคิวให้ทำวันนี้ทันที เพราะพลังงานเต็มที่ (High Focus Zone)"
+            },
+            {
+              "id": "sub-103",
+              "title": "อิมพลีเมนต์ Thread Pool หรือ Select/Poll เพื่อรองรับ 5 ไคลเอนต์",
+              "duration": 45,
+              "cognitive_load": "high",
+              "recommended_energy": "high",
+              "scheduled_day": "Wednesday",
+              "scheduled_time": "18:00 - 18:45",
+              "completed": false,
+              "guidance": "ระวัง Race Condition เมื่ออัปเดต client_list ให้ใช้ Mutex Lock ป้องกันข้อมูลชนกัน",
+              "adjustment_note": "จัดคิวให้ทำวันนี้ทันที เพราะพลังงานเต็มที่ (High Focus Zone)"
+            },
+            {
+              "id": "sub-104",
+              "title": "เขียน Client CLI รองรับพิมพ์ส่งและรับข้อความพร้อมกัน",
+              "duration": 40,
+              "cognitive_load": "medium",
+              "recommended_energy": "medium",
+              "scheduled_day": "Thursday",
+              "scheduled_time": "17:00 - 17:40",
+              "completed": false,
+              "guidance": "แยก Thread สำหรับรับ packet จาก Server และอีก Thread อ่าน input จาก stdin",
+              "adjustment_note": "จัดลงช่วงเย็นหลังเลิกเรียน"
+            },
+            {
+              "id": "sub-105",
+              "title": "ทดสอบด้วย Wireshark บันทึก 3-Way Handshake & ปิดการเชื่อมต่อ",
+              "duration": 30,
+              "cognitive_load": "low",
+              "recommended_energy": "low",
+              "scheduled_day": "Friday",
+              "scheduled_time": "14:00 - 14:30",
+              "completed": false,
+              "guidance": "จับ packet filter port 8080 เซฟภาพ SYN, SYN-ACK, ACK และ FIN นำไปวางในเล่มรายงาน",
+              "adjustment_note": "จัดลงช่วงบ่ายวันศุกร์ก่อนหยุดสุดสัปดาห์"
+            },
+            {
+              "id": "sub-106",
+              "title": "สรุปรายงานแล็บ ตรวจสอบโค้ด และจัดไฟล์ส่ง ZIP",
+              "duration": 35,
+              "cognitive_load": "low",
+              "recommended_energy": "low",
+              "scheduled_day": "Friday",
+              "scheduled_time": "14:00 - 14:30",
+              "completed": false,
+              "guidance": "เช็ก readme.md, คำสั่งรัน makefile / python command และฟอร์แมตรายงานตามเกณฑ์อาจารย์",
+              "adjustment_note": "จัดลงช่วงบ่ายวันศุกร์ก่อนหยุดสุดสัปดาห์"
+            }
+          ]
+        },
+        {
+          "id": "asg-02",
+          "course": "CPE324 Database Systems",
+          "title": "Project Sprint 1: E-Commerce DB Schema & Normalization (3NF)",
+          "source_file": "CPE324_Database_Project_Sprint1.pdf",
+          "deadline": "2026-10-28 17:00",
+          "days_left": 7,
+          "raw_text": "ออกแบบฐานข้อมูลระบบ E-Commerce จัดทำ ER Diagram และทำ Database Normalization ให้อยู่ในรูปแบบ 3NF พร้อมเขียนคำสั่ง SQL DDL สำหรับตาราง Products, Orders, Users, Categories, Payments",
+          "criteria": "1. ER Diagram ครบถ้วนถูกต้อง 35% | 2. ทำ Normalization 3NF ถูกหลักการ 35% | 3. SQL Scripts ทำงานได้สมบูรณ์ 30%",
+          "status": "in_progress",
+          "subtasks": [
+            {
+              "id": "sub-201",
+              "title": "ร่างความสัมพันธ์ Entity & เขียน ER Diagram (Draw.io/Mermaid)",
+              "duration": 40,
+              "cognitive_load": "medium",
+              "recommended_energy": "medium",
+              "scheduled_day": "Thursday",
+              "scheduled_time": "17:00 - 17:40",
+              "completed": false,
+              "guidance": "เน้น Cardinality 1-to-many ระหว่าง User และ Order, Many-to-Many ระหว่าง Order และ Product",
+              "adjustment_note": "จัดลงช่วงเย็นหลังเลิกเรียน"
+            },
+            {
+              "id": "sub-202",
+              "title": "ทำ Database Normalization (1NF -> 2NF -> 3NF)",
+              "duration": 45,
+              "cognitive_load": "high",
+              "recommended_energy": "high",
+              "scheduled_day": "Wednesday",
+              "scheduled_time": "18:00 - 18:45",
+              "completed": false,
+              "guidance": "กำจัด Partial Dependency และ Transitive Dependency จด Functional Dependencies ให้ชัดเจน",
+              "adjustment_note": "จัดคิวให้ทำวันนี้ทันที เพราะพลังงานเต็มที่ (High Focus Zone)"
+            },
+            {
+              "id": "sub-203",
+              "title": "เขียน SQL DDL Create Table & Foreign Keys",
+              "duration": 35,
+              "cognitive_load": "medium",
+              "recommended_energy": "medium",
+              "scheduled_day": "Thursday",
+              "scheduled_time": "17:00 - 17:40",
+              "completed": false,
+              "guidance": "สร้าง Foreign Key Constraint พร้อม ON DELETE CASCADE หรือ SET NULL ให้เหมาะสม",
+              "adjustment_note": "จัดลงช่วงเย็นหลังเลิกเรียน"
+            },
+            {
+              "id": "sub-204",
+              "title": "ใส่ Mock Data ทดสอบ Query JOIN 3 ตาราง",
+              "duration": 30,
+              "cognitive_load": "low",
+              "recommended_energy": "low",
+              "scheduled_day": "Friday",
+              "scheduled_time": "14:00 - 14:30",
+              "completed": false,
+              "guidance": "Insert ตัวอย่างข้อมูล 5-10 records และเขียน SQL SELECT สรุปยอดขายต่อผู้ใช้",
+              "adjustment_note": "จัดลงช่วงบ่ายวันศุกร์ก่อนหยุดสุดสัปดาห์"
+            }
+          ]
+        },
+        {
+          "id": "asg-079b04",
+          "course": "CPE312 Computer Networks",
+          "title": "Lab 4: TCP Socket Programming",
+          "source_file": "Uploaded Document",
+          "deadline": "2026-10-28T13:51",
+          "days_left": 6,
+          "raw_text": "\u0000\u0010JFIF\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0000\u0001ICC_PROFILE\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0000\u0000\u0000\u00040\u0000\u0000mntrRGB XYZ \u0007\u0000\u0001\u0000\u0001\u0000\u0000\u0000\u0000\u0000\u0000acsp\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0001\u0000\u0000\u0000\u0000-\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\tdesc\u0000\u0000\u0000\u0000\u0000\u0000$rXYZ\u0000\u0000\u0001\u0014\u0000\u0000\u0000\u0014gXYZ\u0000\u0000\u0001(\u0000\u0000\u0000\u0014bXYZ\u0000\u0000\u0001<\u0000\u0000\u0000\u0014wtpt\u0000\u0000\u0001P\u0000\u0000\u0000\u0014rTRC\u0000\u0000\u0001d\u0000\u0000\u0000(gTRC\u0000\u0000\u0001d\u0000\u0000\u0000(bTRC\u0000\u0000\u0001d\u0000\u0000\u0000(cprt\u0000\u0000\u0001\u0000\u0000\u0000<mluc\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0000\u0000\fenUS\u0000\u0000\u0000\b\u0000\u0000\u0000\u001c\u0000s\u0000R\u0000G\u0000B...",
+          "criteria": "ความถูกต้องของ TCP Protocol (40%), ความปลอดภัยของ Threads (30%), ผลวิเคราะห์ Wireshark & รายงาน (30%)",
+          "status": "in_progress",
+          "subtasks": [
+            {
+              "title": "ศึกษา Socket Architecture & กำหนด Packet Protocol Specification",
+              "duration": 35,
+              "cognitive_load": "medium",
+              "recommended_energy": "medium",
+              "guidance": "สรุปรูปแบบ Header และ Body ของข้อความแชท วาดโฟลว์การส่งข้อมูลแบบง่าย",
+              "id": "sub-139d6b",
+              "completed": false,
+              "scheduled_day": "Thursday",
+              "scheduled_time": "17:00 - 17:40",
+              "adjustment_note": "จัดลงช่วงเย็นหลังเลิกเรียน"
+            },
+            {
+              "title": "เขียนโค้ด Core TCP Socket Server (Bind, Listen, Accept Loop)",
+              "duration": 45,
+              "cognitive_load": "high",
+              "recommended_energy": "high",
+              "guidance": "สร้าง Server Socket ทดสอบกับเครื่องหมาย Telnet หรือ Netcat ให้สามารถเชื่อมต่อได้",
+              "id": "sub-a8265a",
+              "completed": false,
+              "scheduled_day": "Wednesday",
+              "scheduled_time": "18:00 - 18:45",
+              "adjustment_note": "จัดคิวให้ทำวันนี้ทันที เพราะพลังงานเต็มที่ (High Focus Zone)"
+            },
+            {
+              "title": "สร้างระบบ Multi-threading หรือ Non-blocking I/O รองรับหลายไคลเอนต์",
+              "duration": 45,
+              "cognitive_load": "high",
+              "recommended_energy": "high",
+              "guidance": "ใช้ Thread หรือ Asyncio และใส่ Mutex Lock เพื่อป้องกัน Race Condition ระหว่างส่งแชท",
+              "id": "sub-ef0e9f",
+              "completed": false,
+              "scheduled_day": "Wednesday",
+              "scheduled_time": "18:00 - 18:45",
+              "adjustment_note": "จัดคิวให้ทำวันนี้ทันที เพราะพลังงานเต็มที่ (High Focus Zone)"
+            },
+            {
+              "title": "เขียนโค้ดไคลเอนต์ CLI & ทดสอบการรับ-ส่ง Broadcast ข้อความ",
+              "duration": 40,
+              "cognitive_load": "medium",
+              "recommended_energy": "medium",
+              "guidance": "ทดสอบเปิด 3-4 Terminal พร้อมกันแล้วพิมพ์คุยกัน ตรวจสอบว่าข้อความกระจายครบทุกหน้าต่าง",
+              "id": "sub-8cc376",
+              "completed": false,
+              "scheduled_day": "Thursday",
+              "scheduled_time": "17:00 - 17:40",
+              "adjustment_note": "จัดลงช่วงเย็นหลังเลิกเรียน"
+            },
+            {
+              "title": "ดักจับ Packet ด้วย Wireshark และบันทึกภาพ 3-Way Handshake",
+              "duration": 30,
+              "cognitive_load": "low",
+              "recommended_energy": "low",
+              "guidance": "เปิด Wireshark กรองพอร์ตแอปพลิเคชัน บันทึกภาพจังหวะ SYN, ACK และ FIN",
+              "id": "sub-4bbc99",
+              "completed": false,
+              "scheduled_day": "Friday",
+              "scheduled_time": "14:00 - 14:30",
+              "adjustment_note": "จัดลงช่วงบ่ายวันศุกร์ก่อนหยุดสุดสัปดาห์"
+            },
+            {
+              "title": "จัดทำเล่มรายงานแล็บ สรุปผลการทดลอง และตรวจเช็คไฟล์เตรียมส่ง",
+              "duration": 35,
+              "cognitive_load": "low",
+              "recommended_energy": "low",
+              "guidance": "ตรวจความเรียบร้อยของ Readme.md โค้ดคอมเมนต์ และแปลงรายงานเป็น PDF",
+              "id": "sub-e7c8cd",
+              "completed": false,
+              "scheduled_day": "Friday",
+              "scheduled_time": "14:00 - 14:30",
+              "adjustment_note": "จัดลงช่วงบ่ายวันศุกร์ก่อนหยุดสุดสัปดาห์"
+            }
+          ]
+        }
+      ],
+      "checkin_history": [
+        {
+          "date": "2026-10-17",
+          "day": "เสาร์",
+          "energy": "high",
+          "mood": "energized",
+          "stress": 20,
+          "sleep_hours": 7.5,
+          "tasks_done": 3
+        },
+        {
+          "date": "2026-10-18",
+          "day": "อาทิตย์",
+          "energy": "medium",
+          "mood": "relaxed",
+          "stress": 25,
+          "sleep_hours": 8.0,
+          "tasks_done": 2
+        },
+        {
+          "date": "2026-10-19",
+          "day": "จันทร์",
+          "energy": "high",
+          "mood": "focused",
+          "stress": 35,
+          "sleep_hours": 7.0,
+          "tasks_done": 2
+        },
+        {
+          "date": "2026-10-20",
+          "day": "อังคาร",
+          "energy": "low",
+          "mood": "exhausted",
+          "stress": 55,
+          "sleep_hours": 5.5,
+          "tasks_done": 1
+        },
+        {
+          "date": "2026-10-21",
+          "day": "พุธ (วันนี้)",
+          "energy": "medium",
+          "mood": "focused",
+          "stress": 28,
+          "sleep_hours": 7.0,
+          "tasks_done": 1
+        },
+        {
+          "date": "2026-10-21",
+          "day": "พุธ (วันนี้)",
+          "energy": "high",
+          "mood": "energized",
+          "stress": 5,
+          "sleep_hours": 11.0,
+          "notes": "วันนี้ส่งโค้ดอาจารแบงค์",
+          "tasks_done": 0
+        }
+      ]
+    },
+    "user_bebac16b": {
+      "id": "user_bebac16b",
+      "name": "Test Student",
+      "student_id": "67010555",
+      "email": "test@cpe.ac.th",
+      "password_hash": "scrypt:32768:8:1$jDMJE6edCGOnFz7M$4a6706aa46ea63cd24b492baefd3818c8bad169c930189a552233dc8c2a562fbeb9cd4055e9f926b4c8e64f388bc42d1ecfc2343a51f6258020b31b0d4f24b23",
+      "department": "Computer Engineering",
+      "faculty": "Faculty of Engineering",
+      "streak_days": 1,
+      "completed_subtasks": 0,
+      "current_energy": "medium",
+      "current_mood": "focused",
+      "burnout_score": 25,
+      "last_checkin": "2026-10-21",
+      "classes": [
+        {
+          "id": "c1",
+          "code": "CPE312",
+          "name": "Computer Networks (Lecture)",
+          "day": "Monday",
+          "day_idx": 1,
+          "start": "09:00",
+          "end": "12:00",
+          "room": "ENG-402",
+          "instructor": "ดร. สมชาย เครือข่าย",
+          "color": "indigo"
+        },
+        {
+          "id": "c2",
+          "code": "CPE312L",
+          "name": "Computer Networks Lab",
+          "day": "Monday",
+          "day_idx": 1,
+          "start": "13:00",
+          "end": "16:00",
+          "room": "LAB-501",
+          "instructor": "อ. ปาริฉัตร มั่นคง",
+          "color": "indigo"
+        },
+        {
+          "id": "c3",
+          "code": "CPE324",
+          "name": "Database Systems & Design",
+          "day": "Tuesday",
+          "day_idx": 2,
+          "start": "09:30",
+          "end": "12:00",
+          "room": "ENG-305",
+          "instructor": "ผศ.ดร. นฤมล ฐานข้อมูล",
+          "color": "sky"
+        },
+        {
+          "id": "c4",
+          "code": "CPE381",
+          "name": "Technical Communication",
+          "day": "Tuesday",
+          "day_idx": 2,
+          "start": "13:30",
+          "end": "15:30",
+          "room": "LIB-201",
+          "instructor": "Aj. Michael Brooks",
+          "color": "amber"
+        },
+        {
+          "id": "c5",
+          "code": "CPE223",
+          "name": "Data Structures & Algorithms",
+          "day": "Wednesday",
+          "day_idx": 3,
+          "start": "09:00",
+          "end": "12:00",
+          "room": "ENG-502",
+          "instructor": "รศ.ดร. ชาญวิทย์ โค้ดดิ้ง",
+          "color": "purple"
+        },
+        {
+          "id": "c6",
+          "code": "CPE342L",
+          "name": "Operating Systems Lab",
+          "day": "Wednesday",
+          "day_idx": 3,
+          "start": "14:00",
+          "end": "17:00",
+          "room": "LAB-404",
+          "instructor": "ดร. อนันต์ ซิสเต็ม",
+          "color": "emerald"
+        },
+        {
+          "id": "c7",
+          "code": "CPE491",
+          "name": "Senior Project Seminar",
+          "day": "Thursday",
+          "day_idx": 4,
+          "start": "10:00",
+          "end": "12:00",
+          "room": "SEMINAR-1",
+          "instructor": "คณะกรรมการโครงงาน",
+          "color": "rose"
+        },
+        {
+          "id": "c8",
+          "code": "CPE355",
+          "name": "Software Engineering & Agile",
+          "day": "Thursday",
+          "day_idx": 4,
+          "start": "13:00",
+          "end": "16:00",
+          "room": "ENG-408",
+          "instructor": "อ. ธนกฤต อไจล์",
+          "color": "indigo"
+        },
+        {
+          "id": "c9",
+          "code": "CPE361",
+          "name": "Embedded Systems & IoT",
+          "day": "Friday",
+          "day_idx": 5,
+          "start": "09:00",
+          "end": "12:00",
+          "room": "IOT-LAB",
+          "instructor": "ผศ. สุรชัย ไมโคร",
+          "color": "teal"
+        }
+      ],
+      "assignments": [],
+      "checkin_history": [
+        {
+          "date": "2026-10-21",
+          "day": "วันนี้",
+          "energy": "medium",
+          "mood": "focused",
+          "stress": 25,
+          "sleep_hours": 7.5,
+          "tasks_done": 0
+        }
+      ]
+    },
+    "user_f8adbac0": {
+      "id": "user_f8adbac0",
+      "name": "อภิชัย",
+      "student_id": "99999",
+      "email": "apichai@ksu.ac.th",
+      "password_hash": "scrypt:32768:8:1$EqkbeF3ISTJaDVp3$7b2eaf0dbb11af8add019ce3e8d93dfd0bea6c66ef172ea33ed4f486b27d2904d6b28a942c65fe9807bc7fb137b85c8a131a6ed1cad930aba2af3bf98b22e85e",
+      "department": "Computer Engineering",
+      "faculty": "Faculty of Engineering",
+      "streak_days": 1,
+      "completed_subtasks": 0,
+      "current_energy": "high",
+      "current_mood": "focused",
+      "burnout_score": 5,
+      "last_checkin": "2026-10-21",
+      "classes": [],
+      "assignments": [
+        {
+          "id": "asg-0003e8",
+          "course": "CPE312 Computer Networks",
+          "title": "Lab 4: Multi-threaded TCP Socket Chat Server",
+          "source_file": "Uploaded Document",
+          "deadline": "2026-10-31 23:59",
+          "days_left": 6,
+          "raw_text": "ให้นักศึกษาพัฒนาระบบ Multi-threaded Chat Server และ Client โดยใช้ TCP Socket รองรับการเชื่อมต่อพร้อมกันไม่น้อยกว่า 5 ไคลเอนต์ มีระบบ Broadcast ข้อความ และคำสั่ง /list, /quit พร้อมทั้งส่งรายงานผลการทดสอบและ Wireshark Packet Capture...",
+          "criteria": "ความถูกต้องของ TCP Protocol (40%), ความปลอดภัยของ Threads (30%), ผลวิเคราะห์ Wireshark & รายงาน (30%)",
+          "status": "in_progress",
+          "subtasks": [
+            {
+              "title": "ศึกษา Socket Architecture & กำหนด Packet Protocol Specification",
+              "duration": 35,
+              "cognitive_load": "medium",
+              "recommended_energy": "medium",
+              "guidance": "สรุปรูปแบบ Header และ Body ของข้อความแชท วาดโฟลว์การส่งข้อมูลแบบง่าย",
+              "id": "sub-c6afe7",
+              "completed": false,
+              "scheduled_day": "Thursday",
+              "scheduled_time": "17:00 - 17:40",
+              "adjustment_note": "จัดลงช่วงเย็นหลังเลิกเรียน"
+            },
+            {
+              "title": "เขียนโค้ด Core TCP Socket Server (Bind, Listen, Accept Loop)",
+              "duration": 45,
+              "cognitive_load": "high",
+              "recommended_energy": "high",
+              "guidance": "สร้าง Server Socket ทดสอบกับโปรแกรม Telnet หรือ Netcat ให้สามารถเชื่อมต่อได้",
+              "id": "sub-953f18",
+              "completed": false,
+              "scheduled_day": "Wednesday",
+              "scheduled_time": "18:00 - 18:45",
+              "adjustment_note": "จัดคิวให้ทำวันนี้ทันที เพราะพลังงานเต็มที่ (High Focus Zone)"
+            },
+            {
+              "title": "สร้างระบบ Multi-threading หรือ Non-blocking I/O รองรับหลายไคลเอนต์",
+              "duration": 45,
+              "cognitive_load": "high",
+              "recommended_energy": "high",
+              "guidance": "ใช้ Thread หรือ Asyncio และใส่ Mutex Lock เพื่อป้องกัน Race Condition ระหว่างส่งแชท",
+              "id": "sub-d1f334",
+              "completed": false,
+              "scheduled_day": "Wednesday",
+              "scheduled_time": "18:00 - 18:45",
+              "adjustment_note": "จัดคิวให้ทำวันนี้ทันที เพราะพลังงานเต็มที่ (High Focus Zone)"
+            },
+            {
+              "title": "เขียนโค้ดไคลเอนต์ CLI & ทดสอบการรับ-ส่ง Broadcast ข้อความ",
+              "duration": 40,
+              "cognitive_load": "medium",
+              "recommended_energy": "medium",
+              "guidance": "ทดสอบเปิด 3-4 Terminal พร้อมกันแล้วพิมพ์คุยกัน ตรวจสอบว่าข้อความกระจายครบทุกหน้าต่าง",
+              "id": "sub-f72cb7",
+              "completed": false,
+              "scheduled_day": "Thursday",
+              "scheduled_time": "17:00 - 17:40",
+              "adjustment_note": "จัดลงช่วงเย็นหลังเลิกเรียน"
+            },
+            {
+              "title": "ดักจับ Packet ด้วย Wireshark และบันทึกภาพ 3-Way Handshake",
+              "duration": 30,
+              "cognitive_load": "low",
+              "recommended_energy": "low",
+              "guidance": "เปิด Wireshark กรองพอร์ตแอปพลิเคชัน บันทึกภาพจังหวะ SYN, ACK และ FIN",
+              "id": "sub-53aed0",
+              "completed": false,
+              "scheduled_day": "Friday",
+              "scheduled_time": "14:00 - 14:30",
+              "adjustment_note": "จัดลงช่วงบ่ายวันศุกร์ก่อนหยุดสุดสัปดาห์"
+            },
+            {
+              "title": "จัดทำเล่มรายงานแล็บ สรุปผลการทดลอง และตรวจเช็คไฟล์เตรียมส่ง",
+              "duration": 35,
+              "cognitive_load": "low",
+              "recommended_energy": "low",
+              "guidance": "ตรวจความเรียบร้อยของ Readme.md โค้ดคอมเมนต์ และแปลงรายงานเป็น PDF",
+              "id": "sub-0eec73",
+              "completed": false,
+              "scheduled_day": "Friday",
+              "scheduled_time": "14:00 - 14:30",
+              "adjustment_note": "จัดลงช่วงบ่ายวันศุกร์ก่อนหยุดสุดสัปดาห์"
+            }
+          ]
+        }
+      ],
+      "checkin_history": [
+        {
+          "date": "2026-10-21",
+          "day": "วันนี้",
+          "energy": "medium",
+          "mood": "focused",
+          "stress": 25,
+          "sleep_hours": 7.5,
+          "tasks_done": 0
+        },
+        {
+          "date": "2026-10-21",
+          "day": "พุธ (วันนี้)",
+          "energy": "high",
+          "mood": "focused",
+          "stress": 5,
+          "sleep_hours": 11.0,
+          "notes": "",
+          "tasks_done": 0
+        }
+      ]
+    }
+  }
+}
